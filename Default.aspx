@@ -1,24 +1,15 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="LabsTPV2._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <div style="display: inline; margin-right: 55px">
-    <label for="text">First Value</label>
-        </div>
-    <div style="display: inline; margin-right: 15px">
-    <label for="text">Operation</label>
-        </div>
-    <div style="display: inline; margin-right: 15px">
-    <label for="text">Second Value</label>
-        </div>
-    <div style="display: inline">
-    <label for="text">Count Button</label>
-        </div>
+    <label for="TB1">First Value</label>  
+    <label style="margin-left:110px" for="DDL">Operation</label> 
+    <label style="margin-left:15px" for="TB2">Second Value</label>
     <br>
       <div style="display: inline">      
-    <asp:TextBox ID="operandTB1"  runat="server"></asp:TextBox>
+    <asp:TextBox ID="operandTB1" name="TB1" runat="server"></asp:TextBox>
      </div>
        <div style="display: inline">
-           <asp:DropDownList ID="dropDownList1" runat="server" Width="82px">
+           <asp:DropDownList ID="dropDownList1" name="DDL" runat="server" Width="82px">
                <asp:ListItem Text="+" />
                <asp:ListItem Text="-" />
                <asp:ListItem Text="*" />
@@ -26,7 +17,7 @@
            </div>
 
     <div style="display: inline">
-    <asp:TextBox ID="operandTB2" runat="server"></asp:TextBox>
+    <asp:TextBox ID="operandTB2" name="TB2" runat="server"></asp:TextBox>
         </div>
         <div style="display:inline">
         <asp:Button ID="countButton" runat="server" Text="Count" OnClick="countButton_Click" />
