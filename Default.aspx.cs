@@ -16,12 +16,12 @@ namespace LabsTPV2
 
         protected void countButton_Click(object sender, EventArgs e)
         {
-            if(Page.IsValid)
-            { 
-            int first = Convert.ToInt32(operandTB1.Text);
-            double second = Convert.ToDouble(operandTB2.Text);
-            if (isUnsigned.Checked) 
-                first = (int)Convert.ToUInt32(operandTB1.Text);
+            if (Page.IsValid)
+            {
+                int first = Convert.ToInt32(operandTB1.Text);
+                double second = Convert.ToDouble(operandTB2.Text);
+                if (isUnsigned.Checked)
+                    first = (int)Convert.ToUInt32(operandTB1.Text);
 
                 switch (dropDownList1.SelectedValue)
                 {
