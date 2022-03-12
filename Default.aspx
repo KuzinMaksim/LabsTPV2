@@ -1,7 +1,19 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="LabsTPV2._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    <div style="display: inline; margin-right: 55px">
+    <label for="text">First Value</label>
+        </div>
+    <div style="display: inline; margin-right: 15px">
+    <label for="text">Operation</label>
+        </div>
+    <div style="display: inline; margin-right: 15px">
+    <label for="text">Second Value</label>
+        </div>
+    <div style="display: inline">
+    <label for="text">Count Button</label>
+        </div>
+    <br>
       <div style="display: inline">      
     <asp:TextBox ID="operandTB1"  runat="server"></asp:TextBox>
      </div>
