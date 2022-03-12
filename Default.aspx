@@ -1,6 +1,10 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="LabsTPV2._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+       <label for="TB1">First Value</label>  
+    <label style="margin-left:110px" for="DDL">Operation</label> 
+    <label style="margin-left:15px" for="TB2">Second Value</label>
+    <br>
       <div style="display: inline">      
     <asp:TextBox ID="operandTB1"  runat="server"></asp:TextBox>
      </div>      
