@@ -6,14 +6,14 @@
             <label for="TB1">First Value</label> 
             <br>
                   <div style="display: inline">      
-    <asp:TextBox ID="operandTB1"  runat="server"></asp:TextBox>
+    <asp:TextBox CssClass="form-control" ID="operandTB1"  runat="server"></asp:TextBox>
      </div>              
         </asp:View>
         <asp:View runat="server" ID="View2">
  <label for="DDL">Operation</label> 
             <br>
       <div style="display: inline">
-           <asp:DropDownList ID="dropDownList1" runat="server" Width="82px">
+           <asp:DropDownList CssClass="form-control" ID="dropDownList1" runat="server" Width="82px">
                <asp:ListItem Text="+" />
                <asp:ListItem Text="-" />
                <asp:ListItem Text="*" />
@@ -24,7 +24,7 @@
 <label for="TB2">Second Value</label>
             <br>
             <div style="display: inline">
-    <asp:TextBox ID="operandTB2" runat="server"></asp:TextBox>
+    <asp:TextBox CssClass="form-control" ID="operandTB2" runat="server"></asp:TextBox>
         </div>  
                            <div>
         <asp:CheckBox ID="isUnsigned" runat="server" Text="Is unsigned" />        
@@ -32,7 +32,7 @@
         </asp:View>
         <asp:View runat="server" ID="View4">
        <div style="display:inline">
-        <asp:Button ID="countButton" runat="server" Text="Count" OnClick="countButton_Click" />
+        <asp:Button CssClass="btn btn-primary" ID="countButton" runat="server" Text="Count" OnClick="countButton_Click" />
         </div>
 
         </asp:View>
@@ -59,6 +59,8 @@
     <asp:CustomValidator ID="Custom1"
         runat="server"
         ErrorMessage = "Allowed values is in range -100000 to 100000 "
-        ControlToValidate="operandTB2" OnServerValidate="Custom1_ServerValidate">
+        ControlToValidate="operandTB2"
+        OnServerValidate="Custom1_ServerValidate" 
+        ValidateEmptyText="True">
     </asp:CustomValidator>
 </asp:Content>
