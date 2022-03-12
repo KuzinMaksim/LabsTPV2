@@ -63,5 +63,26 @@ namespace LabsTPV2
             }
 
         }
+
+        protected void Menu1_MenuItemClick(object sender, MenuEventArgs e)
+        {
+            switch (e.Item.Value)
+            {
+                case "fv":
+                    MultiView1.ActiveViewIndex = 0;
+                    break;
+                case "sv":
+                    MultiView1.ActiveViewIndex = 2;
+                    break;
+                case "oper":
+                    MultiView1.ActiveViewIndex = 1;
+                    break;
+                case "count":
+                    MultiView1.ActiveViewIndex = 3;
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
