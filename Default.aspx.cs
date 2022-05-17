@@ -21,7 +21,7 @@ namespace LabsTPV2
                 int first = Convert.ToInt32(operandTB1.Text);
                 double second = Convert.ToDouble(operandTB2.Text);
                 if (isUnsigned.Checked)
-                    first = (int)Convert.ToUInt32(operandTB1.Text);
+                    first = (int)Convert.ToUInt32(operandTB1.Text.TrimStart('-'));
 
                 switch (dropDownList1.SelectedValue)
                 {
